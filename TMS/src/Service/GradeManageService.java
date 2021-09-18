@@ -22,7 +22,10 @@ public class GradeManageService {
 		else s.append(":");
 		if(!gd.couExists(gra)) s.append("学科不存在: ");
 		else s.append(": ");
-		if(gd.exists(gra)) s.append("该科成绩已添加");
+		if(gd.exists(gra)) {
+			s.append("该科成绩已添加");
+			System.out.println("sugwugfuwu");
+		}
 		if(s.toString().equals(":: ")) {
 			gd.add(gra);
 			return null;
